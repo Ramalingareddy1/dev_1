@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Person Information</title>
+  </head>
+  <body>
+    <h1>Person Information</h1>
+    <form>
+      <fieldset>
+        <legend>Login Details</legend>
+        <p>
+          <label for="username">Username:</label>
+          <input type="text" id="username" name="username">
+        </p>
+        <p>
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password">
+        </p>
+      </fieldset>
+      <fieldset>
+        <legend>Personal Details</legend>
+        <p>
+          <label for="name"> Full Name:</label>
+          <input type="text" id="name" name="name">
+        </p>
+        <p>
+          <label>Gender:</label>
+          <label for="male"><input type="radio" id="male" name="gender" value="male">Male</label>
+          <label for="female"><input type="radio" id="female" name="gender" value="female">Female</label>
+        </p>
+        <p>
+          <label for="age">Age:</label>
+          <input type="number" id="age" name="age" min="0">
+        </p>
+      </fieldset>
+      <fieldset>
+        <legend>Contact Details</legend>
+        <p>
+          <label for="address">Address:</label>
+          <textarea id="address" name="address"></textarea>
+        </p>
+        <p>
+          <label>Languages Known:</label>
+          <label for="english"><input type="checkbox" id="english" name="languages_known" value="english">English</label>
+          <label for="telugu"><input type="checkbox" id="telugu" name="languages_known" value="telugu">Telugu</label>
+          <label for="hindi"><input type="checkbox" id="hindi" name="languages_known" value="hindi">Hindi</label>
+        </p>
+      </fieldset>
+      <input type="submit" value="Submit">
+    </form>
+  </body>
+</html>
